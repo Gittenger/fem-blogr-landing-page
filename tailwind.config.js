@@ -23,7 +23,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'custom': ['Georama'],
+        'overpass': ['Overpass'],
+        'ubuntu': ['Ubuntu'],
       },
       borderWidth: {
         '3': '3px',
