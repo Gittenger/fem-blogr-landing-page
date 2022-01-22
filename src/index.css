@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Georama';
+    src: url('./assets/fonts/georama/Georama-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Georama';
+    src: url('./assets/fonts/georama/Georama-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .layout {
+    @apply flex flex-col justify-center items-center mx-auto w-full;
+  }
+
+  .content {
+    @apply flex flex-col justify-center items-center space-y-2 w-full;
+  }
+}
