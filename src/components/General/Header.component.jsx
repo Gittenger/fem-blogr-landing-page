@@ -12,7 +12,7 @@ const arbStyles = {
 }
 
 const Header = () => {
-  const { HamburgerMenu } = CIndex
+  const { HamburgerMenu, Btn } = CIndex
   const HeaderStyles = 'pt-60 pb-6 w-full flex justify-center'
 
   return (
@@ -41,9 +41,9 @@ const Header = () => {
           <h2 className="px-12 mb-12 text-center">
             Grow your audience and build your online brand
           </h2>
-          <div className="mb-32 flex justify-center items-center">
-            <button className="font-bold">Start for Free</button>
-            <button className="font-bold">Learn More</button>
+          <div className="mb-32 flex justify-center items-center space-x-5">
+            <Btn textContent="Start for Free" />
+            <Btn textContent="Learn More" transparent />
           </div>
         </div>
       </div>
