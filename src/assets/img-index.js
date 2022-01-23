@@ -1,5 +1,7 @@
+import LogoImg from './img/logo.svg'
+
 export const images = {
-  svg: {},
+  LogoImg,
 }
 
 export default images
