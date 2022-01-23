@@ -16,18 +16,21 @@ module.exports = {
       'white': '#ffffff',
     },
     gradientColorStops: {
-      'red-300': '#ff8f70',
-      'red-100': '#ff3d54',
+      'red-100': '#ff8f70',
+      'red-300': '#ff3d54',
       'blue-gray-800': '#2c2d3f',
       'blue-gray-desat': '#3f4164',
     },
     extend: {
       fontFamily: {
-        'overpass': ['Overpass'],
-        'ubuntu': ['Ubuntu'],
+        'heading': ['Overpass'],
+        'body': ['Ubuntu'],
       },
       borderWidth: {
         '3': '3px',
+      },
+      borderRadius: {
+        '4xl': '5rem',
       },
     },
   },
