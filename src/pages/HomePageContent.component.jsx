@@ -11,7 +11,7 @@ const HomePageContent = () => {
 
   return (
     <>
-      <div className="w-full grid justify-items-center px-5">
+      <div className="w-full grid justify-items-center">
         <Header />
       </div>
     </>
