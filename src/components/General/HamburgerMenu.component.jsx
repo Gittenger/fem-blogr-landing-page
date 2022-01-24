@@ -6,7 +6,7 @@ const icon = 'transition duration-500 absolute'
 const left = ''
 const right = ''
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ className }) => {
   const [active, setActive] = useState(false)
 
   return (
@@ -14,7 +14,9 @@ const HamburgerMenu = () => {
       onClick={() => {
         setActive(!active)
       }}
-      className={`${btn} ${styles.parent} ${active ? styles.active : ''}`}
+      className={`${btn} ${className} ${styles.parent} ${
+        active ? styles.active : ''
+      }`}
     >
       <div className={`${icon} ${left}`}></div>
       <div className={`${icon} ${right}`}></div>
