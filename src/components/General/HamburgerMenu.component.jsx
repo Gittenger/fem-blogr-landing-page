@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import styles from './styles/HamburgerMenu.module.css'
+import NavContext from '../../contexts/NavContext'
 
 const btn = 'cursor-pointer absolute transition duration-500'
 const icon = 'transition duration-500 absolute'
@@ -7,15 +8,15 @@ const left = ''
 const right = ''
 
 const HamburgerMenu = ({ className }) => {
-  const [active, setActive] = useState(false)
+  const { navState, toggleNav } = useContext(NavContext)
 
   return (
     <button
       onClick={() => {
-        setActive(!active)
+        toggleNav()
       }}
       className={`${btn} ${className} ${styles.parent} ${
-        active ? styles.active : ''
+        navState ? styles.active : ''
       }`}
     >
       <div className={`${icon} ${left}`}></div>
