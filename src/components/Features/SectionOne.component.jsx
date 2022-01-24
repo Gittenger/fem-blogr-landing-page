@@ -9,7 +9,7 @@ const pText =
   'px-10 text-center leading-relaxed tracking-wider font-light font-heading text-blue-gray-800'
 
 const SectionOne = () => (
-  <div className="flex flex-col justify-center items-center pt-20">
+  <div className="flex flex-col justify-center items-center pt-20 pb-12">
     <h2 className={`pb-12 w-full ${headingText}`}>Designed for the future</h2>
     <div className="mb-14">
       <img className="w-full" src={EditorMob} alt="" />
