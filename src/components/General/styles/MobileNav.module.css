@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  width: 90%;
+  background-color: white;
+  top: 140px;
+  z-index: 50;
+}
+
+.active {
+  display: block;
+}
+
+.listActive {
+  display: block;
+}
