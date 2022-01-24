@@ -53,20 +53,20 @@
   /* left */
   & > *:first-child {
     &:before {
-      transform: rotateZ(45deg) scaleX(1.2) translate(7px, 0px);
+      transform: rotateZ(45deg) scaleX(1) translate(7px, 0px);
     }
     &:after {
-      transform: rotateZ(-45deg) scaleX(1.2) translate(7px, 0px);
+      transform: rotateZ(-45deg) scaleX(1) translate(7px, 0px);
     }
   }
 
   /* right */
   & > *:last-child {
     &:before {
-      transform: rotateZ(-45deg) scaleX(1.2) translate(-7px, 0px);
+      transform: rotateZ(-45deg) scaleX(1) translate(-7px, 0px);
     }
     &:after {
-      transform: rotateZ(45deg) scaleX(1.2) translate(-7px, 0px);
+      transform: rotateZ(45deg) scaleX(1) translate(-7px, 0px);
     }
   }
 }
