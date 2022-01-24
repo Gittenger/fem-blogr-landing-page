@@ -13,24 +13,22 @@ const arbStyles = {
 
 const Header = () => {
   const { HamburgerMenu, Btn } = CIndex
-  const HeaderStyles = 'pt-60 pb-6 w-full flex justify-center'
 
   return (
     <header
-      className={`relative bg-gradient-to-br from-red-100 to-red-300 text-white rounded-bl-4xl ${HeaderStyles}`}
+      className={`relative bg-gradient-to-br from-red-100 to-red-300 text-white rounded-bl-4xl pt-60 pb-6 w-full flex justify-center ${styles.header}`}
     >
       <div
         className={`absolute w-full h-full rounded-bl-4xl z-30 ${styles.bgImg}`}
       ></div>
-
-      <div className="z-40">
-        <div className={`absolute ${styles.logo}`}>
-          <img src={LogoImg} alt="" />
-        </div>
-        <HamburgerMenu />
-        <div className="flex flex-col">
+      <div className={`absolute z-30 ${styles.logo}`}>
+        <img src={LogoImg} alt="" />
+      </div>
+      <HamburgerMenu className="z-40" />
+      <div className="flex flex-col w-full">
+        <div className="z-40">
           <h1
-            className="font-semibold px-8 mb-8 font-heading text-3xl leading-normal flex flex-col justify-center items-center"
+            className="font-semibold mb-8 font-heading text-3xl leading-normal flex flex-col justify-center items-center"
             style={arbStyles.h1}
           >
             <div className="whitespace-nowrap text-center">A modern</div>
