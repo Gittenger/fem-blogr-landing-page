@@ -13,8 +13,10 @@ module.exports = {
       'red-50': '#ff7a85',
       'blue-800': '#1f3f5b',
       'blue-gray-100': '#c8c8cb',
+      'blue-gray-700': '#4c5461',
       'blue-gray-800': '#25252d',
       'white': '#ffffff',
+      'gray-100': '#efeff1',
     },
     gradientColorStops: {
       'red-100': '#ff8f70',
