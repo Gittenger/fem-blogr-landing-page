@@ -1,5 +1,5 @@
 .wrapper {
-  transform: translateX(15rem);
+  transform: translateX(25rem);
   width: 90%;
   background-color: theme('colors.white');
   top: 140px;
