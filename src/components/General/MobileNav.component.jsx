@@ -37,7 +37,7 @@ const MobileNav = () => {
 
   return (
     <div
-      className={`absolute flex flex-col justify-center items-center text-blue-gray-800 rounded-lg py-12 duration-300 ${
+      className={`absolute flex flex-col justify-center items-center text-blue-gray-800 rounded-lg py-12 duration-300 shadow-xl ${
         styles.wrapper
       } ${navState ? 'opacity-100' : 'opacity-0'}`}
     >
