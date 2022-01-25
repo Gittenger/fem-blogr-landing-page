@@ -1,9 +1,13 @@
 .wrapper {
-  opacity: 0;
+  transform: translateX(15rem);
   width: 90%;
   background-color: theme('colors.white');
   top: 140px;
   z-index: 50;
+}
+
+.wrapperActive {
+  transform: translateX(0);
 }
 
 .underline {

@@ -39,7 +39,7 @@ const MobileNav = () => {
     <div
       className={`absolute flex flex-col justify-center items-center text-blue-gray-800 rounded-lg py-12 duration-300 shadow-xl ${
         styles.wrapper
-      } ${navState ? 'opacity-100' : 'opacity-0'}`}
+      } ${navState ? `opacity-100 ${styles.wrapperActive}` : 'opacity-0'}`}
     >
       <ul
         className={`flex flex-col items-center justify-center w-full text-center text-xl space-y-5 mb-5`}
