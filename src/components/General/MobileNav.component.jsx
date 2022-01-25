@@ -1,5 +1,6 @@
 import React, { useReducer, useContext } from 'react'
 import styles from './styles/MobileNav.module.css'
+import CIndex from '../components.index.js'
 import navContext from '../../contexts/NavContext.js'
 import images from '../../assets/img-index.js'
 
@@ -25,6 +26,8 @@ function reducer(state, action) {
 }
 
 const MobileNav = () => {
+  const { Btn } = CIndex
+
   const [state, dispatch] = useReducer(reducer, initialState)
   const { navState } = useContext(navContext)
 
@@ -34,12 +37,12 @@ const MobileNav = () => {
 
   return (
     <div
-      className={`absolute flex-col justify-center text-blue-gray-800 rounded-lg items-center py-12 duration-300 ${
+      className={`absolute flex flex-col justify-center items-center text-blue-gray-800 rounded-lg py-12 duration-300 ${
         styles.wrapper
       } ${navState ? 'opacity-100' : 'opacity-0'}`}
     >
       <ul
-        className={`flex flex-col items-center justify-center text-center text-xl space-y-5`}
+        className={`flex flex-col items-center justify-center w-full text-center text-xl space-y-5 mb-5`}
       >
         <li className={`${outerHeading}`}>
           <button
@@ -187,6 +190,13 @@ const MobileNav = () => {
           </ul>
         </li>
       </ul>
+      <div className="w-4/5 h-px bg-blue-gray-100 self-center"></div>
+      <div className="flex flex-col justify-center items-center space-y-4 pt-7">
+        <a className={` ${styles.underline}`} href="#">
+          Login
+        </a>
+        <Btn gradient textContent="Sign Up" />
+      </div>
     </div>
   )
 }
