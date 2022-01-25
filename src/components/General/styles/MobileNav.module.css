@@ -32,9 +32,16 @@
   }
 }
 
+.arrow {
+  transform: rotate(0);
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+}
+
 .active {
 }
 
 .listActive {
-  display: block;
 }

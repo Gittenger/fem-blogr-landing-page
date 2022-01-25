@@ -28,9 +28,9 @@ const MobileNav = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
   const { navState } = useContext(navContext)
 
-  const outerList = ''
   const outerHeading = 'w-full flex flex-col justify-center items-center'
-  const innerList = 'bg-gray-100 text-blue-gray-700 py-8 my-2 w-4/5'
+  const innerList =
+    'bg-gray-100 text-blue-gray-700 w-4/5 rounded-lg duration-300 overflow-hidden'
 
   return (
     <div
@@ -48,13 +48,19 @@ const MobileNav = () => {
             className="flex justify-center items-center"
           >
             Product
-            <span className="ml-2">
-              <img src={ArrowDark} alt="" />
+            <span className={`ml-2`}>
+              <img
+                className={`duration-100 ${
+                  state.product ? styles.arrowRotate : styles.arrow
+                }`}
+                src={ArrowDark}
+                alt=""
+              />
             </span>
           </button>
           <ul
             className={`${styles.innerList} ${innerList} ${
-              state.product ? styles.listActive : 'hidden'
+              state.product ? 'h-auto py-8 my-2' : 'h-0 py-0 my-0'
             }`}
           >
             <li>
@@ -97,12 +103,18 @@ const MobileNav = () => {
           >
             Company
             <span className="ml-2">
-              <img src={ArrowDark} alt="" />
+              <img
+                className={`duration-100 ${
+                  state.company ? styles.arrowRotate : styles.arrow
+                }`}
+                src={ArrowDark}
+                alt=""
+              />
             </span>
           </button>
           <ul
             className={` ${innerList} ${styles.innerList} ${
-              state.company ? styles.listActive : 'hidden'
+              state.company ? 'h-auto py-8 my-2' : 'h-0 py-0 my-0'
             }`}
           >
             <li>
@@ -139,12 +151,18 @@ const MobileNav = () => {
           >
             Connect
             <span className="ml-2">
-              <img src={ArrowDark} alt="" />
+              <img
+                className={`duration-100 ${
+                  state.connect ? styles.arrowRotate : styles.arrow
+                }`}
+                src={ArrowDark}
+                alt=""
+              />
             </span>
           </button>
           <ul
             className={` ${styles.innerList} ${innerList} ${
-              state.connect ? styles.listActive : 'hidden'
+              state.connect ? 'h-auto py-8 my-2' : 'h-0 py-0 my-0'
             }`}
           >
             <li>
