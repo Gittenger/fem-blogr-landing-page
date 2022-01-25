@@ -30,7 +30,7 @@ const MobileNav = () => {
 
   const outerHeading = 'w-full flex flex-col justify-center items-center'
   const innerList =
-    'bg-gray-100 text-blue-gray-700 w-4/5 rounded-lg duration-300 overflow-hidden'
+    'bg-gray-100 text-blue-gray-700 w-4/5 rounded-lg space-y-5 text-lg duration-300 overflow-hidden'
 
   return (
     <div
@@ -38,7 +38,9 @@ const MobileNav = () => {
         styles.wrapper
       } ${navState ? 'opacity-100' : 'opacity-0'}`}
     >
-      <ul className={`flex flex-col items-center justify-center text-center`}>
+      <ul
+        className={`flex flex-col items-center justify-center text-center text-xl space-y-5`}
+      >
         <li className={`${outerHeading}`}>
           <button
             data-id="product"
