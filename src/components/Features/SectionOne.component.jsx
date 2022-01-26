@@ -5,7 +5,7 @@ import styles from './styles/SectionOne.module.css'
 const { EditorMob, EditorDesk } = images
 
 const headingText =
-  'text-2xl font-heading font-semibold text-blue-800 mb-3.5 text-center z-50 w-3/5 md:text-3xl md:text-left md:w-full'
+  'text-2xl font-heading font-semibold text-blue-800 mb-3.5 text-center z-40 w-3/5 md:text-3xl md:text-left md:w-full'
 const subHeading = 'md:pl-20 lg:pl-28'
 const pText =
   'px-10 mb-12 text-center leading-relaxed tracking-wider font-light font-heading text-blue-gray-800 md:text-left md:px-20 lg:px-28'
