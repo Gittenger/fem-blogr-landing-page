@@ -11,7 +11,7 @@ const pText =
   'px-10 mb-12 text-center leading-relaxed tracking-wider font-light font-heading text-blue-gray-800 md:text-left md:px-20 lg:px-28'
 
 const SectionOne = () => (
-  <div className="flex flex-col justify-center items-center pt-20 pb-12 md:pb-36 md:pt-24 lg:pt-32">
+  <div className="flex flex-col justify-center items-center pt-20 pb-12 md:pb-36 md:pt-24 lg:pt-32 lg:pb-56">
     <h2
       className={`pb-12 md:pb-20 lg:pb-28 w-full md:text-center ${headingText}`}
     >
