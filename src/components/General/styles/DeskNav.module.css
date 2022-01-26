@@ -24,7 +24,7 @@
     left: 0;
     height: 1px;
     width: 100%;
-    background-color: theme('colors.blue-gray-700');
+    background-color: theme('colors.white');
     opacity: 0;
   }
 

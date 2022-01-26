@@ -1,16 +1,12 @@
 import React from 'react'
+import styles from './styles/Btn.module.css'
 
-const arbStyles = {
-  btn: {
-    minWidth: '9rem',
-  },
-}
-
-const Btn = ({ textContent, transparent, gradient }) => {
+const Btn = ({ textContent, transparent, gradient, sm }) => {
   return (
     <button
-      style={arbStyles.btn}
       className={` font-bold py-2.5 px-4 rounded-3xl border-white border-2 duration-300 ${
+        sm ? styles.btnSm : styles.btn
+      } ${
         transparent
           ? 'bg-transparent text-white hover:bg-white hover:text-red-300'
           : gradient

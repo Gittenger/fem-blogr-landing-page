@@ -1,4 +1,4 @@
-import React, { useReducer, useContext } from 'react'
+import React, { useReducer } from 'react'
 import styles from './styles/DeskNav.module.css'
 import CIndex from '../components.index.js'
 import images from '../../assets/img-index.js'
@@ -35,7 +35,7 @@ const DeskNav = ({ className }) => {
 
   return (
     <div
-      className={`absolute flex justify-center items-start text-white rounded-lg py-12 duration-300 ${styles.wrapper} hidden z-50 md:flex`}
+      className={`absolute flex justify-center items-start text-white rounded-lg py-12 duration-300 ${styles.wrapper} hidden z-50 md:flex lg:w-5/6`}
     >
       <div className={`relative z-30 mr-6 ml-12 lg:mr-12 ${styles.logo}`}>
         <img src={LogoImg} alt="" />
@@ -192,7 +192,7 @@ const DeskNav = ({ className }) => {
         <a className={` ${styles.underline}`} href="#">
           Login
         </a>
-        <Btn textContent="Sign Up" />
+        <Btn sm textContent="Sign Up" />
       </div>
     </div>
   )
