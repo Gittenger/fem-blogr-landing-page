@@ -3,4 +3,25 @@
   background-size: 150%;
   background-position: top -200px left -70px;
   background-repeat: no-repeat;
+
+  @media screen(md) {
+    background-size: 90%;
+    background-position: top -500px left -300px;
+    background-repeat: no-repeat;
+  }
+
+  @media screen(lg) {
+    background-size: 70%;
+    background-position: top -500px left -200px;
+    background-repeat: no-repeat;
+  }
+}
+
+.phonesImg {
+  top: -15%;
+  left: 5%;
+
+  @media screen(lg) {
+    left: 10%;
+  }
 }
