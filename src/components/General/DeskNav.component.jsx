@@ -52,7 +52,7 @@ const DeskNav = ({ className }) => {
             }}
             className="flex justify-center items-center"
           >
-            Product
+            <span className={`${styles.underline}`}>Product</span>
             <span className={`ml-2`}>
               <img
                 className={`duration-100 ${
@@ -105,7 +105,7 @@ const DeskNav = ({ className }) => {
             }}
             className="flex justify-center items-center"
           >
-            Company
+            <span className={`${styles.underline}`}>Company</span>
             <span className="ml-2">
               <img
                 className={`duration-100 ${
@@ -152,7 +152,7 @@ const DeskNav = ({ className }) => {
             }}
             className="flex justify-center items-center"
           >
-            Connect
+            <span className={`${styles.underline}`}>Connect</span>
             <span className="ml-2">
               <img
                 className={`duration-100 ${
