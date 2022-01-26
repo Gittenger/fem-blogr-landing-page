@@ -29,4 +29,35 @@
   background-image: url('../../../assets/img/bg-pattern-intro-mobile.svg');
   background-position: top -130px left -280px;
   background-size: 300%;
+
+  @media screen(xs) {
+    background-position: top -200px left -350px;
+    background-size: 250%;
+  }
+
+  @media screen(sm) {
+    background-position: top -220px left -400px;
+    background-size: 225%;
+  }
+
+  @media screen(sm2) {
+    background-image: url('../../../assets/img/bg-pattern-intro-desktop.svg');
+    background-position: top -500px left -600px;
+    background-size: 250%;
+  }
+
+  @media screen(md) {
+    background-position: top -650px left -600px;
+    background-size: 225%;
+  }
+
+  @media screen(lg) {
+    background-position: top -900px left -500px;
+    background-size: 180%;
+  }
+
+  @media screen(xl) {
+    background-position: top -1200px left -300px;
+    background-size: 160%;
+  }
 }
