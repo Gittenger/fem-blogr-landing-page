@@ -4,6 +4,14 @@
   @media screen(sm2) {
     font-size: 2.5rem;
   }
+
+  @media screen(md) {
+    font-size: theme('fontSize.5xl');
+  }
+
+  @media screen(lg) {
+    font-size: theme('fontSize.6xl');
+  }
 }
 
 .logo {
