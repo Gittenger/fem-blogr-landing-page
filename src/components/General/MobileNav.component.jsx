@@ -46,7 +46,6 @@ const MobileNav = () => {
       >
         <li className={`${outerHeading}`}>
           <button
-            data-id="product"
             onClick={() => {
               dispatch({ type: 'toggleProduct' })
             }}
@@ -100,7 +99,6 @@ const MobileNav = () => {
         </li>
         <li className={`${outerHeading}`}>
           <button
-            data-id="company"
             onClick={() => {
               dispatch({ type: 'toggleCompany' })
             }}
@@ -148,7 +146,6 @@ const MobileNav = () => {
         </li>
         <li className={`${outerHeading}`}>
           <button
-            data-id="connect"
             onClick={() => {
               dispatch({ type: 'toggleConnect' })
             }}
