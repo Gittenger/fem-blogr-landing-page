@@ -31,7 +31,7 @@ const DeskNav = ({ className }) => {
 
   const outerHeading = 'flex flex-col justify-center items-center'
   const innerList =
-    'relative left-4 bg-gray-100 text-blue-gray-700 w-full rounded-lg space-y-5 flex flex-col justify-center items-start text-lg px-10 duration-300 overflow-hidden'
+    'relative left-4 bg-gray-100 text-blue-gray-700 w-full rounded-lg space-y-5 shadow-xl flex flex-col justify-center items-start text-lg px-10 duration-300 overflow-hidden'
 
   return (
     <div
