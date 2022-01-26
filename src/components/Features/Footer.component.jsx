@@ -1,5 +1,6 @@
 import React from 'react'
 import images from '../../assets/img-index'
+import styles from './styles/Footer.module.css'
 
 const { LogoImg } = images
 
@@ -19,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center sm2:flex-row sm2:items-start w-4/5">
         <div className={` ${listWrapper}`}>
           <h3 className={`${listHeading}`}>Product</h3>
-          <ul className={` ${listStyles}`}>
+          <ul className={`${styles.list} ${listStyles}`}>
             <li>
               <a href="#">Overview</a>
             </li>
@@ -44,7 +45,7 @@ const Footer = () => {
 
         <div className={`${listWrapper}`}>
           <h3 className={`${listHeading}`}>Company</h3>
-          <ul className={` ${listStyles}`}>
+          <ul className={`${styles.list}  ${listStyles}`}>
             <li>
               <a href="#">About</a>
             </li>
@@ -65,7 +66,7 @@ const Footer = () => {
 
         <div className={`${listWrapper}`}>
           <h3 className={`${listHeading}`}>Connect</h3>
-          <ul className={` ${listStyles}`}>
+          <ul className={`${styles.list}  ${listStyles}`}>
             <li>
               <a href="#">Contact</a>
             </li>
