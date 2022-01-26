@@ -37,7 +37,9 @@ const DeskNav = ({ className }) => {
     <div
       className={`absolute flex justify-center items-start text-white rounded-lg py-12 duration-300 ${styles.wrapper} hidden z-50 md:flex lg:w-5/6`}
     >
-      <div className={`relative z-30 mr-6 ml-12 lg:mr-12 ${styles.logo}`}>
+      <div
+        className={`relative z-30 mr-6 ml-12 lg:mr-12 lg:ml-0 ${styles.logo}`}
+      >
         <img src={LogoImg} alt="" />
       </div>
       <ul
