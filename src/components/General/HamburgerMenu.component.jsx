@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import styles from './styles/HamburgerMenu.module.css'
 import NavContext from '../../contexts/NavContext'
 
-const btn = 'cursor-pointer transition duration-500'
+const btn = 'cursor-pointer transition duration-500 md:hidden'
 const icon = 'transition duration-500 absolute'
 const left = ''
 const right = ''

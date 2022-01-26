@@ -1,0 +1,61 @@
+.wrapper {
+  top: 3rem;
+}
+
+.logo {
+  min-width: 70px;
+  top: 0;
+
+  @media screen(lg) {
+    min-width: 120px;
+    top: -7px;
+  }
+}
+
+.underline {
+  position: relative;
+  transition: all 0.3s;
+
+  &:after {
+    transition: opacity 0.3s;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: theme('colors.blue-gray-700');
+    opacity: 0;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.innerList {
+  min-width: 196px;
+  li > a {
+    width: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+      color: black;
+      font-weight: 700;
+    }
+  }
+}
+
+.endList {
+  top: -10px;
+}
+
+.arrow {
+  transform: rotate(0);
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+}

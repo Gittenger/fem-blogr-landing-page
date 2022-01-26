@@ -6,7 +6,7 @@ import styles from './styles/Header.module.css'
 const { LogoImg } = images
 
 const Header = () => {
-  const { HamburgerMenu, Btn } = CIndex
+  const { HamburgerMenu, Btn, DeskNav } = CIndex
 
   return (
     <header
@@ -15,10 +15,11 @@ const Header = () => {
       <div
         className={`absolute w-full h-full rounded-bl-4xl z-30 ${styles.bgImg}`}
       ></div>
-      <div className={`absolute z-30 ${styles.logo}`}>
+      <div className={`absolute z-30 md:hidden ${styles.logo}`}>
         <img src={LogoImg} alt="" />
       </div>
       <HamburgerMenu className="absolute z-40" />
+      <DeskNav />
       <div className="flex flex-col w-full">
         <div className="z-40">
           <h1

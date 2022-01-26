@@ -7,6 +7,7 @@ import HamburgerMenu from './General/HamburgerMenu.component.jsx'
 import Header from './Features/Header.component.jsx'
 import Layout from './General/Layout.component.jsx'
 import MobileNav from './General/MobileNav.component.jsx'
+import DeskNav from './General/DeskNav.component.jsx'
 export const CIndex = {
   Footer,
   SectionOne,
@@ -17,5 +18,6 @@ export const CIndex = {
   Header,
   Layout,
   MobileNav,
+  DeskNav,
 }
 export default CIndex
