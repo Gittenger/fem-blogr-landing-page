@@ -17,6 +17,10 @@
 .logo {
   top: 65px;
   left: 30px;
+
+  @media screen(sm2) {
+    left: 100px;
+  }
 }
 
 .bgImg {
