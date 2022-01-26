@@ -3,6 +3,10 @@
   background-color: theme('colors.white');
   top: 140px;
   z-index: 0;
+
+  @media screen(sm2) {
+    width: 80%;
+  }
 }
 
 .wrapperActive {

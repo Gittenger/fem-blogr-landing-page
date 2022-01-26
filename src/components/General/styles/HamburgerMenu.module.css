@@ -5,7 +5,7 @@
   height: 44px;
 
   @media screen(sm2) {
-    right: 60px;
+    right: 70px;
   }
 
   & > * {
