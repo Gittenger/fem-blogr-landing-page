@@ -1,13 +1,12 @@
 .wrapper {
-  transform: translateX(25rem);
   width: 90%;
   background-color: theme('colors.white');
   top: 140px;
-  z-index: 50;
+  z-index: 0;
 }
 
 .wrapperActive {
-  transform: translateX(0);
+  z-index: 50;
 }
 
 .underline {
