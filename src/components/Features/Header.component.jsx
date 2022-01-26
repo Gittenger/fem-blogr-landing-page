@@ -18,7 +18,7 @@ const Header = () => {
       <div className={`absolute z-30 ${styles.logo}`}>
         <img src={LogoImg} alt="" />
       </div>
-      <HamburgerMenu className="z-40" />
+      <HamburgerMenu className="absolute z-40" />
       <div className="flex flex-col w-full">
         <div className="z-40">
           <h1
