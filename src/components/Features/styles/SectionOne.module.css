@@ -1,0 +1,11 @@
+.imgWrapper {
+  @media screen(md) {
+    top: -20%;
+    right: -200px;
+  }
+
+  @media screen(lg) {
+    top: -45%;
+    right: -200px;
+  }
+}
