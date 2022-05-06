@@ -5,7 +5,7 @@ import { HomePage } from './pages/pages-index.js'
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={HomePage} />
       </Switch>
